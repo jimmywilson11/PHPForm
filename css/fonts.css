@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Edicia Thin";
+    src: url("../fonts/EdiciaThin.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Okta Neue";
+    src: url("../fonts/OktaNeue.otf");
+    font-weight: bold;
+    font-style: normal;
+}
