@@ -22,8 +22,8 @@
                 <label for="second-name">Фамилия: <input type="text" name="second-name" id="second-name"
                         required></label>
                 <label class="gender" for="gender">Пол:</label>
-                    <p><input type="radio" class="radio-btn" name="gender" value="male" checked> Мужской</p>
-                    <p><input type="radio" class="radio-btn" name="gender" value="female"> Женский</p>
+                    <p><input type="radio" class="radio-btn" name="gender" value="Мужской" checked> Мужской</p>
+                    <p><input type="radio" class="radio-btn" name="gender" value="Женский"> Женский</p>
                 <label for="age">Возраст: <input type="number" name="age" id="age" min="0" step="1" required>
                     лет</label>
             </fieldset>
@@ -56,10 +56,10 @@
                     <p><input class="books" type="radio" name="books" value="50+"> 50+</p>
                 <h3>Ваши комментарии:</h3>
                 <textarea name="comments" id="comments" cols="40" rows="6"></textarea>
-                <select name="pisiton" id="position" multiple>
-                    <option value="1">Первая позиция</option>
-                    <option value="2">Вторая позиция</option>
-                    <option value="3">Третья позиция</option>
+                <select name="poisiton[]" id="position" multiple>
+                    <option value="1 Первая позиция">Первая позиция</option>
+                    <option value="2 Вторая позиция">Вторая позиция</option>
+                    <option value="3 Третья позиция">Третья позиция</option>
                 </select>
             </fieldset>
             <fieldset id="at-last">

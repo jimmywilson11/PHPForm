@@ -98,6 +98,8 @@ textarea {
   border-radius: 15px;
   border: 2px solid #207CE5;
   margin-bottom: 10px;
+  font: 600 14px Edicia Thin, serif;
+  padding: 15px;
 }
 
 #position {
