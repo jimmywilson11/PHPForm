@@ -31,7 +31,7 @@
                 <legend>Подробнее о себе</legend>
                 <label for="gender-2"><input type="radio" class="radio-btn" name="gender-2" value="Молодой человек" checked> Молодой человек</label>
                 <label for="gender-2"><input type="radio" class="radio-btn" name="gender-2" value="Девушка"> Девушка</label>
-                <label id="date"><input type="date" name="date"> Дата рождения</label>
+                <label id="date"><input type="date" name="date" min="1920-01-01" max="2020-01-01"> Дата рождения</label>
                 <label for="marital-status"><input type="text" name="marital-status" id="marital-status"> Семейное
                     положение</label>
                 <label for="social-status"><input type="text" name="social-status" id="social-status"> Социальный
@@ -55,7 +55,7 @@
                     <p><input class="books" type="radio" name="books" value="21-50"> 21-50</p>
                     <p><input class="books" type="radio" name="books" value="50+"> 50+</p>
                 <h3>Ваши комментарии:</h3>
-                <textarea name="comments" id="comments" cols="40" rows="6"></textarea>
+                <textarea name="comments" id="comments" cols="40" rows="6" required></textarea>
                 <select name="poisiton[]" id="position" multiple>
                     <option value="1. Первая позиция">Первая позиция</option>
                     <option value="2. Вторая позиция">Вторая позиция</option>
@@ -69,9 +69,9 @@
                 <input type="email" name="email" id="email" required>
                 <label id="subscribing">Хотите подписаться на самую модную рассылку спама?</label>
                 <p class="description">Выберите категории:</p>
-                <p><input type="checkbox" name="subscribing" value="Оборудование"> Оборудование</p>
-                <p><input type="checkbox" name="subscribing" value="Как приготовить обед"> Как приготовить обед</p>
-                <p><input type="checkbox" name="subscribing" value="Заработай миллион за два дня!"> Заработай миллион за
+                <p><input type="checkbox" name="subscribing1" value="Оборудование"> Оборудование</p>
+                <p><input type="checkbox" name="subscribing2" value="Как приготовить обед"> Как приготовить обед</p>
+                <p><input type="checkbox" name="subscribing3" value="Заработай миллион за два дня!"> Заработай миллион за
                     два
                     дня!</p>
                 <label for="finish-question">На сколько сложная задача:</label>

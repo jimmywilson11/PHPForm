@@ -27,16 +27,16 @@
             <p>Место жительства: <?php echo $_POST['address']; ?> </p>
             <p> Что вы обычно делаете на выходных:
                 <?php
-                    if (isset($_POST['spend-time1'])) echo $_POST['spend-time1'];
-                    if (isset($_POST['spend-time2'])) echo $_POST['spend-time2'];
-                    if (isset($_POST['spend-time3'])) echo $_POST['spend-time3'];
-                    if (isset($_POST['spend-time4'])) echo $_POST['spend-time4'];
+                    if (isset($_POST['spend-time1'])) echo $_POST['spend-time1'].'<br>';
+                    if (isset($_POST['spend-time2'])) echo $_POST['spend-time2'].'<br>'; 
+                    if (isset($_POST['spend-time3'])) echo $_POST['spend-time3'].'<br>'; 
+                    if (isset($_POST['spend-time4'])) echo $_POST['spend-time4'].'<br>'; 
                 ?>
             </p>
-            <p>Рассказать о форматах в книге, посвященной HTML: <?php echo $_POST['about-book']; ?> </p>
+            <p>Рассказать о форматах в книге, посвященной HTML: <?php echo '<br>'.$_POST['about-book']; ?> </p>
             <p>Сколько книг вы прочитали за свою жизнь: <?php if (isset($_POST['books'])) echo $_POST['books']; ?> </p>
             <h3>Ваши комментарии:</h3>
-            <textarea id="comments"> <?php echo $_POST['comments']; ?> </textarea>
+            <textarea id="comments" readonly> <?php echo $_POST['comments']; ?> </textarea>
             <p> <?php foreach ($_POST['poisiton'] as $keys => $values) echo "$values<br>"; ?> </p>     
         </fieldset>
         <fieldset id="at-last">
@@ -46,7 +46,9 @@
             <h3>Вы подписались на рассылку на тему:</h3>
             <p> 
                 <?php 
-                    if (isset($_POST['subscribing'])) echo $_POST['subscribing'];
+                    if (isset($_POST['subscribing1'])) echo $_POST['subscribing1'].'<br>';
+                    if (isset($_POST['subscribing2'])) echo $_POST['subscribing2'].'<br>';
+                    if (isset($_POST['subscribing3'])) echo $_POST['subscribing3'].'<br>';
                 ?> 
             </p>
             <h3>На сколько сложная задача:</h3>
@@ -57,9 +59,6 @@
 
 </html>
 
-
-
-<?php
 
 
 
